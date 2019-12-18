@@ -62,3 +62,31 @@
 			background-color:rgba(0,51,50,0.8) !important;
 			color:#ccc;	
 		}
+
+
+
+@media only screen and (min-width: 768px) {
+	/* tablets and desktop */
+
+}
+
+@media only screen and (max-width: 767px) {
+    /* phones */
+    #forclock{
+		font-size:80px;
+	}
+
+	#days ul{
+		/*flex-direction: column;*/
+	}
+
+	#days{
+		padding:0 5%;
+		bottom:20vh;
+	}
+}
+
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+    /* portrait phones */
+}
