@@ -1,13 +1,28 @@
 		@font-face{
 		 font-family:'digital-clock-font';
-		 src: url('font/digi1.ttf');
-		 /*src: url('font/digitalbanks.ttf');*/
+		 /*src: url('font/digi1.ttf');*/
+		 src: url('font/digitalbanks.ttf');
 		}
 
 		body{
 			background-color:#333;
-			background-image:url("http://pluspng.com/img-png/starry-sky-background-png-night-sky-stars-milkyway-on-mountains-background-1920.png");
+			background-image:url("https://www.itl.cat/pngfile/big/0-7755_nature-pier-bridge-d-river-water-sunset-night.jpg");
 			background-size:cover;
+		}
+
+		#fordate{
+			background:linear-gradient(35deg, rgba(0,51,50,0.8), rgba(0,51,50,1));
+			color:#ccc;
+			width:80%;
+			margin:auto;
+			padding:10px;
+			font-size:30px;
+			text-align:center;
+			border-radius:20px 20px 0 0;
+			height: 7vh;
+			overflow: hidden;
+			border-right:5px solid #ffcccc;
+			border-left:5px solid #ccccff;
 		}
 
 		#forclock{
@@ -40,10 +55,17 @@
 			align-items: center;
 			border-radius:30px;
 			overflow: hidden;
-			background-image:url("https://nextstepsyep.org/wp-content/uploads/2016/05/background-white-paper-texture-1024x1024.jpg");
+			/*background-image:url("https://nextstepsyep.org/wp-content/uploads/2016/05/background-white-paper-texture-1024x1024.jpg");*/
+			background:linear-gradient(35deg, #ffcccc, #ccffff);
 			background-size:cover;
 			border-right:5px solid rgba(0,51,50,1);
 			border-left:5px solid rgba(0,51,50,1);
+		}
+
+		#period, #sec{
+			font-size:50px;
+			flex-order:4;
+			line-height: 70px;
 		}
 
 		#days ul li{
@@ -59,7 +81,7 @@
 		}
 
 		.active{
-			background-color:rgba(0,51,50,0.8) !important;
+			background-color:rgba(0,51,50,1) !important;
 			color:#ccc;	
 		}
 
