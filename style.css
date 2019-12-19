@@ -4,7 +4,7 @@
 		 /*src: url('font/digitalbanks.ttf');*/
 		}
 
-	body{
+		body{
 			background-color:#333;
 			background-image:url("http://pluspng.com/img-png/starry-sky-background-png-night-sky-stars-milkyway-on-mountains-background-1920.png");
 			background-size:cover;
@@ -73,7 +73,9 @@
 @media only screen and (max-width: 767px) {
     /* phones */
     #forclock{
-		font-size:80px;
+		flex-direction: column;
+		line-height: 140px;
+		font-size: 170px !important;
 	}
 
 	#days ul{
@@ -82,7 +84,7 @@
 
 	#days{
 		padding:0 5%;
-		bottom:20vh;
+		bottom:5vh;
 	}
 }
 

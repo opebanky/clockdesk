@@ -37,7 +37,9 @@
 		    	secs = '0' + secs;
 		    }
 
-		    document.getElementById("forclock").innerHTML = hour + ":" + mins + ":" + secs;
+		    document.getElementById("hr").innerHTML = hour + ":";
+		    document.getElementById("min").innerHTML = mins + ":";
+		    document.getElementById("sec").innerHTML = secs;
 		}
 
 		setInterval("showTime()", 1000);
