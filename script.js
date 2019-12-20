@@ -20,9 +20,6 @@
 		    	}
 		    }
 
-		    if(day == 3){
-		    }
-
 		    if(hour > 12){
 		    	hour = hour - 12;
 		    	document.getElementById("period").innerHTML ="PM";
@@ -31,7 +28,7 @@
 		    }
 
 		    if(hour == 0){
-		    	hour = 0;
+		    	hour = '12';
 		    }
 
 		    if(hour < 10){
