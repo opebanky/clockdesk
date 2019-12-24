@@ -11,11 +11,11 @@
 
 		    // alert(day);
 		    var monthsArray = new Array("Jan. ","Feb. ","Mar. ","Apr. ","May ","June ","July ","Aug. ","Sept. ","Oct. ","Nov. ","Dec. ");
-		    var days = new Array("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday");
+		    var days = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
 		    var alldays = document.getElementsByTagName("li");
 
 		    for(var i=0; i <= alldays.length; i++){
-		    	if((i+1) === day){
+		    	if((i) === day){
 		    		alldays[i].classList.add("active");
 		    	}
 		    }
@@ -46,7 +46,9 @@
 		    document.getElementById("hr").innerHTML = hour + ":";
 		    document.getElementById("min").innerHTML = mins ;
 		    document.getElementById("sec").innerHTML = ":" + secs;
-		    document.getElementById("fordate").innerHTML = "<h2>" + days[day -1] + ", " + date  + " " + monthsArray[month] + year + "</h2>";
+	    	document.getElementById("fordate").innerHTML = "<h2>" + days[day] + ", " + date  + " " + monthsArray[month] + year + "</h2>";
+	
+
 		}
 
 		setInterval("showTime()", 1000);
